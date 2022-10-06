@@ -1,0 +1,13 @@
+lda 8501
+mov b,a
+lda 8500
+mvi c,00
+loop: cmp b
+jc loop1
+sub b
+inr c
+jmp loop
+loop1: sta 8503
+mov a,c
+sta 8502
+rst 1
