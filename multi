@@ -1,0 +1,13 @@
+lda 2000
+mov b,a
+lda 2001
+mov c,a
+cpi 00
+jz loop
+xra a
+loop1: add b
+dcr c
+jz loop
+jmp loop1
+loop: sta 2002
+hlt
