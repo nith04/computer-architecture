@@ -1,0 +1,5 @@
+mvi a,03h
+mvi b,02h
+sub b
+sta 2001h
+hlt
